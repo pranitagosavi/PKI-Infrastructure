@@ -33,6 +33,13 @@ PKI (Public Key Infrastructure) is a system that enables secure communication ov
 4. Generate and sign user/device certificates as needed.
 5. Deploy PKI services (if applicable).
 
+## Output 
+
+- Root certificate
+- Root CA Key
+- Private keys (.key)
+- Certificate Revocation List (CRL)
+
 
 
 
