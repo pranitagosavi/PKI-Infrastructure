@@ -19,17 +19,17 @@ steps to set up the PKI Infrastructure:
 ## How to Run
 
 steps below to implement PKI:
-1. Generate Root Key
+1. Generate Root Key :
    openssl genrsa -out rootCA.key 2048
-2. Create Root Certificate
+2. Create Root Certificate :
    openssl req -x509 -new -nodes -key rootCA.key -sha256 -days 365 -out rootCA.crt
-3. Generate Server Key
+3. Generate Server Key :
    openssl genrsa -out server.key 2048
-4. Create Certificate Signing Request (CSR)
+4. Create Certificate Signing Request (CSR) :
    openssl req -new -key server.key -out server.csr
-5. Sign Certificate using Root CA
+5. Sign Certificate using Root CA :
    opensssl x509 -req -in server.csr -CA rootCA.crt -CAkey rootCA.key -CAcreateserial -out server.crt -days 365 -sha256
-6. Verify Certificate
+6. Verify Certificate :
    openssl verify -CAfile rootCA.crt server.crt
 
 ## Output 
