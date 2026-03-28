@@ -14,7 +14,7 @@ steps to set up the PKI Infrastructure:
      openssl version
 3. Create Project Folder:
    - mkdir pki-project
-     cd pki-project
+   -cd pki-project
 
 ## How to Run
 
