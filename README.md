@@ -7,12 +7,12 @@ This project demonstrates the implementation of Public Key Infrastructure (PKI) 
 ## Installation
 
 steps to set up the PKI Infrastructure:
-1. Install OpenSSL
+1. Install OpenSSL:
    Download and install OpenSSL on your system.
-2. Verify Installation
+2. Verify Installation:
    open terminal or command prompt and run:
    openssl version
-3. Create Project Folder
+3. Create Project Folder:
    mkdir pki-project
    cd pki-project
 
